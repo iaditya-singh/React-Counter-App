@@ -1,0 +1,113 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Container holding the content */
+.container {
+  width: 100%;
+  max-width: 400px;
+
+  text-align: center;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Styling for the counter card */
+.total_amount_card {
+  padding: 20px;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  background-image: linear-gradient(to right, rgba(253, 230, 90, 100%), rgba(204, 254, 87, 100%));
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.total_amount_heading {
+  font-size: 40px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.card_text {
+  margin-top: 15px;
+}
+
+/* Close button icon */
+.right svg {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.right svg:hover {
+  transform: scale(1.1);
+  fill: #888;
+}
+
+/* Button styling */
+.button_collection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn_one,
+.btn_two {
+  background-color: #ffcd39;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 50%;
+  font-size: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn_one:hover,
+.btn_two:hover {
+  background-color: #ffb300;
+  transform: scale(1.1);
+}
+
+.btn_two {
+  background-color: #f44336;
+}
+
+.btn_two:hover {
+  background-color: #d32f2f;
+}
+
+/* Hover effect on the container */
+.container:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
